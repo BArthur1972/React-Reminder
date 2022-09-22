@@ -1,14 +1,10 @@
 import React, {} from "react";
 
 function Reminder(props) {
+
+    // Returns header in span or strikethrough based on the value of showCompletedReminders
     return (
-           <span> 
-                {/* TODO:  i. Display a reminder
-                           ii. It should be displayed as a <span> element if the showCompletedReminders is false
-                               OR                        a <s> (strike) element if the showCompletedReminders is true
-                    HINT: Remember you passed this information as props in App.js
-                */} 
-            </span>
+    (props.showCompletedRemindersValue === false) ? <span>{props.reminderObject.title}</span> : <s>{props.reminderObject.title}</s>
     );
 }
 
