@@ -28,6 +28,7 @@ function App() {
   /* Adds a reminder to the reminders array */
   function addReminder() {
     setReminders(prevReminders => [...prevReminders, reminder]);
+    setReminder(initialReminder);
   }
 
   /* Mark's the reminder with the "id" argument as completed. */
